@@ -1,0 +1,29 @@
+# 依赖相关
+# 子目录依赖文件夹
+frontend/node_modules/
+backend/node_modules/
+node_modules/
+npm-debug.log*  # npm 错误日志
+yarn-debug.log*  # yarn 错误日志
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json  # 若团队统一用 yarn/pnpm，可忽略；若用 npm 则保留
+yarn.lock  # 同理，根据团队包管理器选择是否保留
+pnpm-lock.yaml
+
+# 构建产物
+dist/
+build/
+out/
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# 编辑器配置（根据团队使用的编辑器添加，可选）
+.idea/  # IntelliJ 系列（WebStorm、IDEA 等）
+.vscode/  # VS Code（若团队需要共享编辑器配置，可删除这行）
+*.swp  # Vim 临时文件
+*.swo
